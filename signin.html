@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head> 
         <style>
         body {
             background-color: #212125;
@@ -61,18 +61,20 @@
             background-color: #0fbfb1 !important;
         }
         
+      
+    </style>
     <script
-      src="https://www.widget.authiqa.com"
-      defer
-      data-api-key="APK_c390e81dffc818d12450bb2775266219_1745408324"
-      action="signin"
-      success-auth-path="https://natuvea.github.io/childdemo/success.html"
-      theme="dark"
-      data-messages='{
-            "signinSuccess": "Custom success message",
-            "signinLoading": "Custom loading message"
+        src="https://www.widget.authiqa.com"
+        defer
+        data-api-key="APK_c390e81dffc818d12450bb2775266219_1745408324"
+        successAuthPath="https://natuvea.github.io/childdemo/success.html"
+        buttonName="SignIn to Your Account"
+        theme="dark"
+        data-messages='{
+            "signupSuccess": "Account created successfully! Please check your email for verification.",
+            "signupLoading": "Creating your account..."
         }'
-  data-customization='{
+        data-customization='{
             "typography": {
                 "titleText": {
                     "signinText": "Sign In"
@@ -85,9 +87,8 @@
            
         }'
     ></script>
-  </head>
-  <body>
- 
+</head>
+<body>
     <div id="authiqa"></div>
-  </body>
+</body>
 </html>
