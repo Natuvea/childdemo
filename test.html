@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - Authiqa Widget</title>
+    <script
+        src="https://www.widget.authiqa.com"
+        defer
+        data-api-key="APK_c390e81dffc818d12450bb2775266219_1745408324"
+        action="signup"
+        verifyAuthPath="https://natuvea.github.io/childdemo/verify.html"
+        resendAuthPath="https://natuvea.github.io/childdemo/resend.html"
+        termsAndConditions="https://www.mywebsite.com/terms"
+        privacy="https://www.mywebsite.com/privacy"
+        notificationSettings="https://www.mywebsite.com/notification"
+        data-messages='{
+            "signupSuccess": "Account created successfully! Please check your email for verification.",
+            "signupLoading": "Creating your account..."
+        }'
+        data-customization='{
+            "pageLayout": {
+                "backgroundColor": "#dd1d1d",
+                "formPosition": "center",
+                "formMarginTop": "50px",
+                "formMarginBottom": "50px"
+            },
+            "layout": {
+                "padding": "5.5rem",
+                "margin": "3rem",
+                "borderRadius": "7.5rem",
+                "maxWidth": "19.5rem"
+            },
+            "colors": {
+                "background": "#dd1d1d",
+                "buttonBackground": "#be5050",
+                "buttonText": "#9d0b0b",
+                "inputBackground": "#a87171",
+                "inputText": "#9d0c0c",
+                "borderColor": "#541717"
+            },
+            "typography": {
+                "titleText": {
+                    "signupText": "Sign Up"
+                },
+                "titleSize": "2.8rem",
+                "titleColor": "#382929",
+                "labelSize": "0.8rem", 
+                "fontFamily": "Arial, sans-serif",
+                "termsText": {
+                    "agreePrefix": "I agree with the",
+                    "andConnector": "ao",
+                    "defaultPrefix": "and default",
+                    "linkText": {
+                        "terms": "Terms and Conditions",
+                        "privacy": "Privacy Policy",
+                        "notifications": "Notification Settings"
+                    }
+                }
+            },
+            "inputs": {
+                "emailLabel": "Email Address",
+                "passwordLabel": "Password",
+                "usernameLabel": "Username"
+            },
+            "buttons": {
+                "signupText": "Sign Up",
+                "height": "4.8125rem",
+                "borderRadius": "7.5rem"
+            }
+        }'
+    ></script>
+</head>
+<body>
+    <div id="authiqa"></div>
+</body>
+</html>
