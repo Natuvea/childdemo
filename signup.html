@@ -1,71 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign Up - Authiqa Widget</title>
-    <style>
-        body {
-            background-color: #212125;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        
-        /* Custom styling for the teal color scheme */
-        .authiqa-container h1 {
-            color: #10D5C6 !important;
-            text-align: left !important;
-            font-weight: 800 !important;
-            font-size: 1.9rem !important;
-            line-height: 1.2 !important; /* Tighten line height */
-        }
-        
-        /* Add subtitle */
-        .authiqa-container h1:after {
-            content: "Start Authenticating users in minutes";
-            display: block;
-            color: #ffffff !important;
-            font-size: 0.7rem !important; /* Slightly smaller */
-            font-weight: 400 !important;
-            margin-top: 0.4rem !important; /* Remove top margin completely */
-            line-height: 0.6 !important; /* Tighten line height */
-            margin-bottom: 1rem !important; /* Add margin below the subtitle instead */
-        }
-        
-        /* Input field styling */
-        .authiqa-container input {
-            background-color: #212125 !important;
-            color: #ffffff !important;
-            border: 1px solid #3f3f46 !important;
-            height: 2.5rem !important;
-        }
-        
-   
-        
-     
-        .authiqa-container input::placeholder {
-            color: #71717a !important;
-        }
-        
-        .authiqa-container input:focus {
-            border-color: #10D5C6 !important;
-            box-shadow: 0 0 0 2px rgba(16, 213, 198, 0.25) !important;
-        }
-        
-       
-        
-        /* Button styling */
-        .authiqa-container button[type="submit"] {
-            background-color: #10D5C6 !important;
-            color: #1F2025 !important;
-            display: flex !important;
-        }
-        
-        .authiqa-container button[type="submit"]:hover {
-            background-color: #0fbfb1 !important;
-        }
-        
-        .authiqa-container .terms-container a {
-            color: #10D5C6 !important;
-        }
-    </style>
+        <script src="global-config.js"></script>
+
     <script
        src="https://www.widget.authiqa.com"
         defer
@@ -77,21 +14,12 @@
         privacy="https://www.widget.authiqa.co/privacy"
         notificationSettings="https://www.widget.authiqa.co/notification"
         theme="dark"
-        data-messages='{
-            "signupSuccess": "Account created successfully! Please check your email for verification.",
-            "signupLoading": "Creating your account..."
-        }'
-        data-customization='{
-            "typography": {
-                "titleText": {
-                    "signupText": "Get Started"
-                },
-                "titleColor": "#10D5C6"
-            },
-          
-           
-        }'
+
     ></script>
+     <script src="https://widget.authiqa.com/hash-navigation.js" 
+         defer>
+         
+     </script>
 </head>
 <body>
     <div id="authiqa"></div>
