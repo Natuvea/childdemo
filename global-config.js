@@ -119,3 +119,43 @@ window.AuthiqaGlobalConfig = {
     }
 };
 
+// Apply the advanced CSS
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.AuthiqaGlobalConfig?.customization?.advancedCSS) {
+        const style = document.createElement('style');
+        style.textContent = window.AuthiqaGlobalConfig.customization.advancedCSS;
+        document.head.appendChild(style);
+    }
+    
+    // Set up a mutation observer to add subtitles to h1 elements
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.addedNodes) {
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.nodeType === 1) { // Element node
+                        const h1 = node.tagName === 'H1' ? node : node.querySelector('h1');
+                        if (h1 && h1.classList.contains('authiqa-title')) {
+                            // Determine which form we're on
+                            let formType = '';
+                            if (h1.textContent.includes('Sign In')) formType = 'signin';
+                            else if (h1.textContent.includes('Get Started') || h1.textContent.includes('Create Account')) formType = 'signup';
+                            else if (h1.textContent.includes('Reset Password')) formType = 'reset';
+                            else if (h1.textContent.includes('Update Password')) formType = 'update';
+                            else if (h1.textContent.includes('Resend')) formType = 'resend';
+                            else if (h1.textContent.includes('Verify')) formType = 'verify';
+                            
+                            // Set the subtitle as a data attribute
+                            if (formType && window.AuthiqaGlobalConfig?.customization?.typography?.subtitleText?.[formType + 'Text']) {
+                                h1.setAttribute('data-subtitle', window.AuthiqaGlobalConfig.customization.typography.subtitleText[formType + 'Text']);
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    });
+    
+    // Start observing the document body for changes
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+
