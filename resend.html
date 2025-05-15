@@ -1,82 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-        body {
-            background-color: #212125;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        
-        /* Custom styling for the teal color scheme */
-        .authiqa-container h1 {
-            color: #10D5C6 !important;
-            text-align: left !important;
 
-            font-weight: 800 !important;
-            font-size: 1.8rem !important;
-            margin-bottom: 1rem !important; /* Remove bottom margin completely */
-            line-height: 1.2 !important; /* Tighten line height */
-        }
-        
-       
-        
-        /* Input field styling */
-        .authiqa-container input {
-            background-color: #212125 !important;
-            color: #ffffff !important;
-            border: 1px solid #3f3f46 !important;
-            height: 2.5rem !important;
-            padding: 0 0.75rem !important;
-        }
-        
-        /* Label styling */
-        .authiqa-container label,
-        .authiqa-label {
-            font-size: 0.875rem !important;
-        }
-        
-        /* Form styling - reduce spacing between elements */
-        .authiqa-container form {
-            gap: 0.2rem !important; 
-            border-radius: 0.1rem !important;/* Further reduced gap between form elements */
-        }
-        
-        /* Reduce space between labeled inputs */
-        .authiqa-container .authiqa-labeled-input {
-            margin-bottom: 0.5rem !important; /* Reduced margin between input groups */
-        }
-        
-        .authiqa-container input::placeholder {
-            color: #71717a !important;
-        }
-        
-        .authiqa-container input:focus {
-            border-color: #10D5C6 !important;
-            box-shadow: 0 0 0 2px rgba(16, 213, 198, 0.25) !important;
-        }
-        
-       
-        /* Button styling */
-        .authiqa-container button[type="submit"] {
-            background-color: #10D5C6 !important;
-            color: #18181b !important;
-            font-weight: 600 !important;
-            height: 2rem !important;
-            margin-top: 0.5rem !important;
-            border-radius: 4px !important; /* Much less rounded corners */
-        }
-        
-        .authiqa-container button[type="submit"]:hover {
-            background-color: #0fbfb1 !important;
-        }
-        
-        
-    </style>
+    <script src="global-config.js"></script>
     <script
       src="https://www.widget.authiqa.com"
       defer
@@ -84,38 +10,11 @@
       action="resend"
       verifyAuthPath="https://natuvea.github.io/childdemo/verify.html"
       theme="dark"
-data-messages='{
-            "resendSuccess": "Confirmation email sent! Please check your inbox.",
-            "resendLoading": "Sending confirmation email..."
-        }'
-        data-customization='{
-            "typography": {
-                "titleText": {
-                    "resendText": "Resend Confirmation Email"
-                },
-                "titleColor": "#10D5C6"
-            },
-            "layout": {
-                "padding": "1.5rem",
-                "margin": "0",
-                "borderRadius": "16px",
-                "maxWidth": "400px"
-            },
-            "colors": {
-                "background": "#27272a",
-                "buttonBackground": "#10D5C6",
-                "buttonText": "#18181b",
-                "inputBackground": "#18181b",
-                "inputText": "#ffffff",
-                "inputPlaceholder": "#71717a",
-                "borderColor": "#3f3f46"
-            },
-            "buttons": {
-                "resendText": "Resend"
-            }
-        }'
-      
     ></script>
+      <script src="https://widget.authiqa.com/hash-navigation.js" 
+         defer>
+         
+     </script>
   </head>
   <body>
    
