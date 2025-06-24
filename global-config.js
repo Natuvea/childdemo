@@ -57,7 +57,9 @@ window.AuthiqaGlobalConfig = {
                 },
                 textColor: "#ffffff",
                 linkColor: "#10D5C6"
-            }
+            },
+            navTextColor: "#1a1a1a",
+            navTextColorDark: "#ffffff"
         },
         
         // Buttons
