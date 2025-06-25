@@ -71,7 +71,22 @@ window.AuthiqaGlobalConfig = {
             backgroundColor: "#212125"
         },
         
-       
+        navLinks: {
+            signinPrompt: 'Already registered?',
+            signinLinkText: 'Log in here',
+            signupPrompt: 'Need an account?',
+            signupLinkText: 'Register',
+            forgotPrompt: 'Trouble signing in?',
+            forgotLinkText: 'Recover Password',
+            fontSize: '1rem',
+            color: '#ffffff',
+            linkColor: '#10D5C6',
+            fontWeight: '400',
+            linkFontWeight: '300',
+            textAlign: 'left',
+            marginTop: '2rem',
+            marginBottom: '1rem'
+        }
     },
     
     // Custom messages
@@ -87,3 +102,4 @@ window.AuthiqaGlobalConfig = {
         resendLoading: "Sending confirmation email..."
     }
 };
+
