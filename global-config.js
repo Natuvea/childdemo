@@ -44,8 +44,10 @@ window.AuthiqaGlobalConfig = {
             titleColor: "#10D5C6",
             titleAlignment: "left",
             titleWeight: "800",
-            titleLineHeight: "1.2",
+            titleLineHeight: "1.3",
             fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+            labelColor: "#ff6600",
+            labelFontWeight: "700",
             termsText: {
                 agreePrefix: "I agree with the",
                 andConnector: "and",
@@ -60,10 +62,33 @@ window.AuthiqaGlobalConfig = {
             }
         },
         
+        // Inputs
+        inputs: {
+            emailPlaceholder: "Email Address",
+            passwordPlaceholder: "Password",
+            usernamePlaceholder: "Username",
+            confirmPasswordPlaceholder: "Confirm Password",
+            emailLabel: "Email",
+            passwordLabel: "Password",
+            usernameLabel: "Username",
+            confirmPasswordLabel: "Confirm Password",
+            borderRadius: "20px",
+            height: "50px",
+            width: "100%",
+            padding: "0 1rem",
+            margin: "0 0 0.5rem 0",
+            fontSize: "1rem",
+            fontWeight: "400",
+            focusBorderColor: "#000000",
+            focusBoxShadow: "0 0 0 2px rgba(19, 224, 11, 0.25)",
+            placeholderAlign: 'center'
+        },
+        
         // Buttons
         buttons: {
-            height: "2.5rem",
-            borderRadius: "4px"
+            height: "3rem",
+            borderRadius: "10px",
+            hoverBackground: "#ffffff"
         },
         
         // Page Layout
@@ -85,7 +110,8 @@ window.AuthiqaGlobalConfig = {
             linkFontWeight: '300',
             textAlign: 'left',
             marginTop: '2rem',
-            marginBottom: '1rem'
+            marginBottom: '1rem',
+            backToSigninPrompt: 'Return to?'
         }
     },
     
