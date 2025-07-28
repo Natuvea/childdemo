@@ -91,10 +91,7 @@ window.AuthiqaGlobalConfig = {
             hoverBackground: "#ffffff"
         },
         
-        // Page Layout
-        pageLayout: {
-            backgroundColor: "#212125"
-        },
+ 
         
         navLinks: {
             signinPrompt: 'Already registered?',
