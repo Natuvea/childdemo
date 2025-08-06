@@ -10,7 +10,7 @@ window.AuthiqaGlobalConfig = {
         
         // Colors
         colors: {
-            background: "#27272a",
+            background: "#ffffff",
             buttonBackground: "#ffffff",
             buttonText: "#1F2025",
             inputBackground: "#212125",
